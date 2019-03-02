@@ -1,14 +1,11 @@
 import * as React from 'react';
 import './App.css';
 
-import { Button } from './button';
-
 class App extends React.Component {
   public render() {
     return (
       <div className="container">
           <Header/>
-          <Button/>
           <Card/>
       </div>
     );
@@ -29,7 +26,11 @@ function Header(){
 function Card() {
   return (
       <div className="github-profile">
-        One Github Profile
+        <img src="https://placehold.it/75" alt=""/>
+        <div className="info">
+          <div className="name">Name goes here</div>
+          <div className="company">Company</div>
+        </div>
       </div>
   )
 }
